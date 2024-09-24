@@ -1,0 +1,541 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: black url('/assets/css/img/fundo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.30);
+    z-index: 1;
+}
+
+.menu img {
+    height: 120px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.menu nav {
+    background: rgba(0, 0, 0, 0.45);
+    padding: 1%;
+    width: 100%;
+    border-bottom-left-radius: 50px;
+    height: 85px;
+}
+
+.menu a {
+    margin-left: 15rem; 
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu img {
+        margin: 2% auto;
+    }
+
+    .menu a {
+        margin: 0.5rem;
+        text-align: center;
+    }
+}
+
+
+.container_um {
+    width: 50%;
+    margin: 50px auto;
+    padding: 50px; 
+    color: white;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    border: 0.5px ridge white;
+    background: rgba(0, 0, 0, 0.45); 
+}
+
+.container_um h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.lista {
+    list-style: none;
+    padding-left: 0;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.lista li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.lista li::before {
+    content: "➔";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.coworking {
+    width: 50%;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: #041B31;
+    color: white;
+    border-radius: 25px;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    border: 0.5px ridge white;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+
+.coworking h2 {
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.coworking a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #029BE1;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+    width: 45%;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.coworking a:hover {
+    background-color: #1663CB;
+    animation: float 1s ease-in-out infinite;
+}
+
+.icone-container-dois .material-icons {
+    font-size: 50px;
+    color: #fff;
+}
+
+.escrito-virtual {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 50px auto;
+    color: white;
+    background: rgba(0, 0, 0, 0.30);
+    width: 55%;
+    border: 0.5px ridge white;
+    position: relative;
+    border-radius: 20px;
+}
+
+.container-dois {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.box {
+    flex: 1 0 18%; 
+    max-width: 18%;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    text-align: justify;
+    color: white;
+    background: rgba(0, 0, 0, 0.45);
+    border: 0.5px ridge white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+}
+
+.box .material-icons {
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .container-dois {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        max-width: 100%; 
+        width: 100%; 
+        margin: 10px 0; 
+    }
+}
+
+#entre-contato {
+    display: block;
+    padding: 10px 20px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #029BE1;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+    width: 25%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+}
+
+#entre-contato a:hover {
+    background-color: #1663CB;
+    animation: float 1s ease-in-out infinite;
+}
+
+/*Contato - CSS */
+
+.contato { 
+    display: flex;
+    margin: 35px auto;
+    padding-top: 25px;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    color: white;
+    background: rgba(0, 0, 0, 0.30);
+    border: 0.5px ridge white;
+    border-radius: 20px;
+}
+
+.contato h1 {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+.contato p {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.button { 
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #029BE1;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+    width: 25%;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    animation: float 1s ease-in-out infinite;
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .contato {
+        width: 90%; /* Reduz a largura para telas menores */
+        padding: 20px; /* Ajusta o padding para telas menores */
+    }
+
+    .button {
+        width: 50%; /* Ajusta a largura dos botões para telas menores */
+        max-width: 200px; /* Limita a largura máxima dos botões para telas menores */
+    }
+}
+
+/*Serviços - CSS */
+
+.container-quatro {
+    display: flex;
+    margin: 40px auto;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.30);
+    width: 50%;
+    padding-top: 10px;
+    border-radius: 20px;
+    border: 0.5px ridge white;
+    padding-bottom: 10px;
+}
+
+.contato-button {
+    display: block;
+    padding: 10px 20px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #029BE1;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .container-quatro {
+        width: 90%; 
+    }
+
+    .contato-button {
+        width: 80%; 
+        max-width: 300px; 
+    }
+}
+
+.accordion-container {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    margin-top: 20px;
+}
+
+.accordion-item {
+    flex: 1;
+    margin-bottom: 10px; 
+    position: relative;
+    overflow: hidden;
+}
+
+.accordion-item:last-child {
+    margin-bottom: 0; 
+}
+
+.accordion-header {
+    background-color: #112240;
+    cursor: pointer;
+    padding: 15px 20px;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: background-color 0.4s;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    width: 90%;
+}
+
+.accordion-header:hover {
+    background-color: #233554;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    background: rgba(0, 0, 0, 0.30);
+    padding: 0 20px;
+    color: white;
+    box-sizing: border-box;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 0.5px ridge white;
+}
+
+.accordion-content p {
+    margin: 10px 0;
+}
+
+.accordion-container button {
+    background: rgba(0, 0, 0, 0.30);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.accordion-item:hover .accordion-content {
+    max-height: 300px; 
+    padding: 15px 20px; 
+}
+
+.accordion-item:hover .arrow {
+    transform: rotate(90deg);
+}
+
+.arrow {
+    transition: transform 0.4s;
+    display: inline-block;
+}
+
+@media (min-width: 768px) {
+    .accordion-container {
+        flex-direction: row; 
+    }
+
+    .accordion-item {
+        flex: 1; 
+        margin-bottom: 0; 
+    }
+}
+
+.container-cinco {
+    width: 90%; 
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header, .pacotes, .sala-reuniao {
+    background: rgba(0, 0, 0, 0.30);
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border: 0.5px ridge white;
+}
+
+.header h1, .sala-reuniao h2, .localizacao h2 {
+    text-align: center;
+}
+
+.pacotes {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+}
+
+.pacote {
+    background-color: #1E2A38;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 45%; 
+    margin-bottom: 20px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.preco {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    margin-top: 20px;
+}
+
+.preco-opcao {
+    background-color: #1E2A38;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 30%; 
+    margin-bottom: 20px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+    .pacote {
+        width: 90%; 
+    }
+
+    .preco-opcao {
+        width: 100%; 
+    }
+}
+
+/* Rodapé - CSS */
+
+.footer {
+    display: flex;
+    padding-top: 25px;
+}
+
+.footer div {
+    width: 50%;
+    text-align: center;
+}
+
+.localizacao {
+    background: rgba(0, 0, 0, 0.45);
+    color: white;
+}
+
+.horarios {
+    background: rgba(0, 0, 0, 0.45);
+    color: white;
+}
+
+
+.footer .material-icons {
+    padding: 15px;
+    font-size: 19px;
+}
+
+.footer .fa-brands {
+    padding: 15px;
+    font-size: 19px;
+    color: white;
+}
